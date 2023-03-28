@@ -1,7 +1,0 @@
-version: '3.8'
-services:
-  cryptopro:
-    build: .
-    ports:
-      - 9090:9090
-    restart: always
