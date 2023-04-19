@@ -32,7 +32,7 @@
 "⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠘⠿⣿⠿⠋⠀⠀⣸⡇⠀⠀⠀⠀\n" \
 "⠀⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠛⠁⠀⠀⠀⠀\n" \
 
-#define SERVER_PORT 7878
+#define SERVER_PORT 9004
 
 #define BUF_SIZE 64
 

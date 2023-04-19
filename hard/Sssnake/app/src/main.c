@@ -9,7 +9,7 @@
 
 #define FLAG_FILE "flag.txt"
 
-#define HASH "ca96103124a7d70e50bff00e3086acf8"
+#define HASH "24e5fc322c0c9fddea5b85e2f40c404e"
 
 #define BUF_SIZE 33
 

@@ -24,7 +24,7 @@ int get_flag(char * flag, size_t size)
 		return -1;
 	}
 
-	int rc = read(fd, flag, size);
+	ssize_t rc = read(fd, flag, size);
 	if ((-1 == rc) || (rc > size))
 	{
 		printf("read failed: %s\n", strerror(errno));
@@ -42,9 +42,10 @@ int ask(char * monolith)
 {
 	printf("What can you wish for the Great Monolith?\n> ");
 
-	if (!fgets(monolith, MONOLITH_BUF_SIZE, stdin))
+	ssize_t rc = read(0, monolith, MONOLITH_BUF_SIZE);
+	if ((-1 == rc) || (rc > MONOLITH_BUF_SIZE))
 	{
-		printf("fgets failed\n");
+		printf("read failed: %s\n", strerror(errno));
 		return -1;
 	}
 
